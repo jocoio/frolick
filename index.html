@@ -7,8 +7,10 @@
 </head>
 
 <body>
-    <div>
+    <div id="main-content">
+        <p>Design Studio</p>
         <h1>Frolick</h1>
+        <a class="social-icon" href="https://www.instagram.com/frolickdesign" target="_blank"><img src="./assets/social/instagram.svg"></a>
     </div>
 </body>
 
@@ -19,6 +21,9 @@
         font-weight: 400;
         font-style: normal;
         font-variation-settings: "YEAR" 1979;
+        color: #FFD80B;
+        font-size: 2.5em;
+        letter-spacing: 1px;
     }
 
     p {
@@ -27,11 +32,34 @@
         font-style: normal;
         font-variation-settings:
             "wdth" 100;
+        background-color: #FFD80B;
+        color: black;
+        width: min-content;
+        padding: 8px;
+        line-height: 90%;
+        white-space: nowrap;
     }
 
     body {
         display: flex;
         justify-content: center;
         align-items: center;
+        background: url(./assets/dance.png);
+        flex-direction: column;
+    }
+
+    #main-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .social-icon img {
+        width: 40px;
+        height: 40px;
+        padding-bottom: 20px
     }
 </style>
